@@ -1,1 +1,6 @@
 # CVEs we accept on purpose, one per line, each with a reason above it.
+
+# zlib1g: fixed version not yet in the Debian mirror (checked 2026-11-12).
+# Owner: yxngstxr. Re-check weekly; remove when the base image has the fix.
+CVE-2026-76844
+CVE-2026-85091
