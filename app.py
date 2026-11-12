@@ -10,6 +10,7 @@ VERSION = os.environ.get("APP_VERSION", "dev")
 def greet(name: str) -> str:
     return f"Hello, {name.strip().title()}!"
 
+
 @app.get("/")
 def index():
     return {"host": socket.gethostname(), "greeting": greet("narxoz")}
@@ -19,9 +20,10 @@ def index():
 def healthz():
     return {"status": "ok"}
 
+
 @app.get("/version")
 def version():
-	return {"version": VERSION}
+    return {"version": VERSION}
 
 
 if __name__ == "__main__":
