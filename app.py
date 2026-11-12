@@ -8,7 +8,7 @@ VERSION = os.environ.get("APP_VERSION", "dev")
 
 
 def greet(name: str) -> str:
-    return f"Hello, {name.strip().title()}!"
+    return f"Hello, {name.title()}!"
 
 
 @app.get("/")
